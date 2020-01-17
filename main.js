@@ -1115,7 +1115,7 @@ const loop = () => {
     switch (activeRoom){
     
         case Rooms.zero:
-            roomMessage = "11 ROOMS-br-By Heewon Ahn-br- -br-HOW TO PLAY:-br-    Use the doors to transverse between each of the 11 Rooms.-br-    MAGENTA doors lead to the next room.-br-    GOLDEN doors lead to different parts of the same room.-br- -br-PRO TIP:-br-    Press space to pause.-br-    Use the pause feature to your advantage.-br-    Password fields still work when paused."
+            roomMessage = "11 ROOMS-br-By Heewon Ahn-br- -br-HOW TO PLAY:-br-    Use the doors to transverse between rooms.-br-    MAGENTA doors => next room-br-    GOLDEN doors => different parts of same room-br- -br-PRO TIP:-br-    Press space to pause.-br-    Use the pause feature to your advantage.-br-    Password fields still work when paused."
             dance.play(); energy.pause(); motion.pause(); epic.pause()
             break
         case Rooms.one:
@@ -1254,17 +1254,17 @@ const loop = () => {
 
         if (enem.xspeed >= 0){
 
-            enem.xspeed += 0.5;
+            enem.xspeed += scl*0.03;
         }else{
     
-            enem.xspeed -= 0.5;
+            enem.xspeed -= scl*0.03;
         }
        if (enem.yspeed >= 0){
     
-        enem.yspeed += 0.5;
+        enem.yspeed += scl*0.03;
        }else{
     
-        enem.yspeed -= 0.5;
+        enem.yspeed -= scl*0.03;
        }
 
        if (player.paused){
